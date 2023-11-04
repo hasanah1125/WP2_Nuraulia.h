@@ -32,22 +32,48 @@
                 </td>
             </tr>
             <tr>
-                <td>SKS</td>
+                <td>Kelas</td>
                 <td>:</td>
                 <td>
-                    <?= $sks; ?>
+                    <?= $Kelas; ?>
                 </td>
             </tr>
             <tr>
-            <td>SKS</td>
+                <td>Tanggal Lahir</td>
                 <td>:</td>
                 <td>
-                    <?= $sks; ?>
-                </td>     
+                    <?= $TanggalLahir; ?>
+                </td>
             </tr>
             <tr>
-                <td colspan="3" align="center">
-                    <a href="<?= base_url('matakuliah'); 
+                <td>Tempat Lahir</td>
+                <td>:</td>
+                <td>
+                    <?= $TempatLahir; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>
+                    <?= $Alamat; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <?= $JenisKelamin; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td>
+                    <?= $Agama; ?>
+                </td>        
+                <td colspan="6" align="center">
+                    <a href="<?= base_url('Data Siswa'); 
 ?>">Kembali</a>
                 </td>
             </tr>
