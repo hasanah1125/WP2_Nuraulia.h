@@ -41,14 +41,14 @@ method="post">
                 </td>
             </tr>
             <tr>    
-                <th>Tempat Lahir</th>
+                <th>Tanggal Lahir</th>
                 <td>:</td>
                 <td>
                     <input type="text" name="Tempat Lahir" id="Tempat Lahir">
                 </td>
             </tr>
             <tr>
-                <th>Tanggal Lahir</th>
+                <th>Tempat Lahir</th>
                 <td>:</td>
                 <td>
                     <input type="text" name="Tanggal Lahir" id="Tanggal Lahir">
@@ -86,9 +86,9 @@ method="post">
                 </td>
             </tr>
             <tr>
-                <td colspan="6" align="center">
-                    <input type="submit" value="Submit">
-                </td>
+                <td colspan="3" align="center">
+                    <input type="submit" value="submit" name="submit">
+               </td>
             </tr>
         </table>
     </form>

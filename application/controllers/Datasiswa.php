@@ -63,18 +63,19 @@ class datasiswa extends CI_Controller
             $this->load->view('view-form-datasiswa');
         } else {
             $data = [
-                'nama'          => $this->input->post('Nama'),
-                'NIS'           => $this->input->post('NIS'),
-                'Kelas'         => $this->input->post('Kelas'),
-                'Tanggal Lahir' => $this->input->post('Tanggal Lahir'),
-                'Tempat Lahir'  => $this->input->post('Tempat Lahir'),
-                'Alamat'        => $this->input->post('Alamat'),
-                'Jenis kelamin' => $this->input->post('Jenis kelamin'),
-                'Agama'         => $this->input->post('Agama')
+                'nama'           => $this->input->post('Nama'),
+                'NIS'            => $this->input->post('NIS'),
+                'Kelas'          => $this->input->post('Kelas'),
+                'Tempat Lahir'   => $this->input->post('Tempat Lahir'),
+                'Tanggal Lahir'  => $this->input->post('Tanggal Lahir'),
+                'Alamat'         => $this->input->post('Alamat'),
+                'Jenis kelamin'  => $this->input->post('Jenis kelamin'),
+                'Agama'          => $this->input->post('Agama')
             ];
 
             $this->load->view('view-data-Siswa', $data);
         }
+        
     }
 }
     

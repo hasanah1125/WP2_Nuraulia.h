@@ -74,7 +74,7 @@
                 </td>        
                 <td colspan="6" align="center">
                     <a href="<?= base_url('Data Siswa'); 
-?>">Kembali</a>
+?>">kembali</a>
                 </td>
             </tr>
         </table>
