@@ -5,18 +5,21 @@ class Admin extends CI_Controller
 {
     public function __construct()
     {
-        parent::__construct();
-        cek_login();
+    parent::__construct();
+    cek_login();
     }
 
     public function index()
     {
         $data['judul'] = 'Dashboard';
-        $data['user'] = $this->ModelUser->cekData(['email' => $this-
->session->userdata('email')])->row_array();
-        $data['anggota'] = $this->ModelUser->getUserLimit()-
->result_array();
-        $data['buku'] = $this->ModelBuku->getBuku()->result_array();
+        $data['user'] = 
+        $this->ModelUser->cekData(['email' => 
+        $this->session->userdata('email')])->row_array();
+        $data['anggota'] = 
+        $this->ModelUser->getUserLimit()
+        ->result_array();
+        $data['buku'] = $this->ModelBuku->getBuku();
+    
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
@@ -24,4 +27,3 @@ class Admin extends CI_Controller
         $this->load->view('templates/footer');
     }
 }
-   
